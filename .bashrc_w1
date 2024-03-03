@@ -1,4 +1,10 @@
- Import colorscheme from 'wal' asynchronously
+# add this to your ~/.bashrc
+# 
+# if [ -f ~/.bashrc_w1 ]; then
+#    . ~/.bashrc_w1
+# fi
+
+# Import colorscheme from 'wal' asynchronously
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
 # source: https://itsfoss.com/pywal/
