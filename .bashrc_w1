@@ -1,0 +1,12 @@
+ Import colorscheme from 'wal' asynchronously
+# &   # Run the process in the background.
+# ( ) # Hide shell job control messages.
+# source: https://itsfoss.com/pywal/
+(cat ~/.cache/wal/sequences &)
+
+# Shorten the depth of directory paths
+#PROMPT_DIRTRIM=2
+
+# move the cursor to a new line
+# after the user@host dir
+PS1="${PS1}\n"
