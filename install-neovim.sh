@@ -24,13 +24,13 @@ cd neovim || exit
 make CMAKE_BUILD_TYPE=RelWithDebInfo
 
 # Ask the user if there are any errors before proceeding
-read -rp "Do you see any errors? (y/n): " user_input
+read -rp "If you saw no errors type y (y/n): " user_input
 if [ "$user_input" != "y" ]; then
     echo "Aborting the build process."
     exit 1
 fi
 
-# Change into build directory, create DEB package, and install
+echo "Changing into build directory, creating DEB package, and installing..."
 cd build || exit
 cpack -G DEB
 sudo dpkg -i nvim-linux64.deb
