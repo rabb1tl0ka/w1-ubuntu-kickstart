@@ -1,5 +1,5 @@
-alias csproddb='gcloud compute ssh --zone "us-central1-c" "production-backend-bastion" --project "cloudsort-version1"'
-alias csdevdb='gcloud compute ssh --zone "us-central1-c" "development-backend-bastion" --project "cloudsort-version1"'
+alias csproddb='gcloud compute ssh --zone "us-central1-c" "production-bastion-host" --project "cloudsort-version1"'
+alias csdevdb='gcloud compute ssh --zone "us-central1-c" "development-bastion-host" --project "cloudsort-version1"'
 
 
 alias cloudsort='cd ~/loka/projects/cloudsort/'
