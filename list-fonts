@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# List installed fonts in a clean format for config files
+# Searches standard font directories and outputs unique font names
+
+{
+  find ~/.local/share/fonts /usr/share/fonts -type f \( -name "*.ttf" -o -name "*.otf" -o -name "*.ttc" \) 2>/dev/null |
+    while read font; do
+      basename "$font" | sed 's/\.[^.]*$//'  # Remove extension
+    done
+} | sort -u | nl -w 1 -s '. '
+
+echo ""
+echo "Total fonts found: $(find ~/.local/share/fonts /usr/share/fonts -type f \( -name "*.ttf" -o -name "*.otf" -o -name "*.ttc" \) 2>/dev/null | wc -l)"
