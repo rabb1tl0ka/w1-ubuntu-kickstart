@@ -14,7 +14,7 @@ alias sirius='cd ~/loka/projects/sirius'
 alias siriusproddb='aws ssm start-session --target i-0b52316bd213ad6d3'
 alias siriusproddbgo='psql -h sirius-prod.con4gfwbvyio.us-east-1.rds.amazonaws.com -U postgres -d siriustx_db'
 
-alias notifspeaker='cd ~/code/notifspeaker && source env/bin/activate && python3 notifspeaker.py polly'
+alias notifspeaker='cd ~/code/rabb1tl0ka/notifspeaker && source env/bin/activate && python3 notifspeaker.py polly'
 
 alias osversion='lsb_release -a'
 alias security-encpass='sudo ecryptfs-unwrap-passphrase ~/.ecryptfs/wrapped-passphrase'
